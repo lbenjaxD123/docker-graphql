@@ -26,8 +26,10 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t lbenjaxd/docker-graphql:0.0.2 .
+        docker build -t lbenjaxd/docker-graphql:latest .
         
     - name: Push Docker Image
       run: |
         docker push lbenjaxd/docker-graphql:0.0.2
+        docker push lbenjaxd/docker-graphql:latest
         
